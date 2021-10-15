@@ -1,0 +1,52 @@
+a, a > code {
+  color: #D55E00FF;
+  text-decoration: none;
+}
+em {
+  color: #D55E00FF;
+  font-style: normal;
+}
+del {
+  color: #E5E5E5;
+  text-decoration: none;
+  font-weight: normal;
+}
+.inverse del {
+  color: #6C7B7F;
+}
+.bg-white-o90{
+   background-color: rgba(255, 255, 255, 0.9);
+}
+.large { font-size: 175% }
+.hide-count .remark-slide-number {
+  display: none;
+}
+.text-poster {
+	font-family: 'Cinzel', serif;
+}
+.inverse {
+  color: #b9bfca;
+  background-color: #282D35
+}
+.inverse.remark-slide-number {
+  color: #b9bfca;
+}
+.remark-code-line-highlighted {
+  color: #D55E00FF;
+  background-color: transparent;
+}
+.remark-inline-code {
+  color: #b9bfca;
+}
+code {
+  line-height: 120%
+}
+.h2 {
+  font-family: 'Karla'
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+.dim {
+  color: #6C7B7F;
+}
