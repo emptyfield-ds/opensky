@@ -4,6 +4,8 @@
 # opensky
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/emptyfield-ds/opensky/workflows/R-CMD-check/badge.svg)](https://github.com/emptyfield-ds/opensky/actions)
 <!-- badges: end -->
 
 The goal of opensky is to …
