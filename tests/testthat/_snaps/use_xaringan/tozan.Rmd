@@ -1,0 +1,83 @@
+---
+title: ""
+subtitle: ""
+author: "Malcolm Barrett"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    css: ["xaringan-themer.css", "theme.css"]
+    nature:
+      titleSlideClass: ["bottom", "left"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: true
+      navigation:
+        scroll: false 
+---
+
+class: right middle hide-count
+background-color: white
+background-image: url(img/INSERT_TITLE_SLIDE_IMAGE.png)
+background-position: left
+
+<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Karla|Montserrat|Open+Sans|Quattrocento|Raleway&display=swap" rel="stylesheet">
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(
+  highlight = TRUE,
+  warning = FALSE, 
+  message = FALSE, 
+  dev = "ragg_png",
+  dpi = 320,
+  out.width = "80%",
+  fig.width = 6,
+  fig.asp = 0.618,
+  fig.retina = 2,
+  fig.align = "center",
+  fig.show = "hold"
+)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+
+style_mono_light(
+  white_color = "#fff",
+  header_font_google = google_font("Cedarville Cursive", "600"),
+  text_font_google = google_font("Karla", "300", "300i", "600"),
+  code_font_google = google_font("Fira Code"),
+  text_font_size = "24px",
+  code_font_size = "1.2em"
+)
+
+opaque_box <- function(x) {
+  htmltools::tags$div(
+    class = "f1 bg-white-o90 pa6 shadow-3 h-75",
+    htmltools::tags$h1(htmltools::tags$em(x))
+  )
+}
+```
+
+```{r xaringan-animate-all, echo=FALSE}
+xaringanExtra::use_animate_all("fade")
+xaringanExtra::use_tachyons()
+xaringanExtra::use_text_poster()
+```
+
+.pull-right[
+  # Title `r rmarkdown::metadata$title`
+  ## Subtitle `r rmarkdown::metadata$subtitle`
+]
+
+Malcolm Barrett
+
+`r fontawesome::fa("twitter", fill = "#282D35")` @malco_barrett
+
+Slides: [bit.ly/link_to_slides]()

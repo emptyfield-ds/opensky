@@ -7,7 +7,7 @@
 \usage{
 use_xaringan_kakashi(save_as, open = is_interactive())
 
-use_xaringan_tozan(save_as)
+use_xaringan_tozan(save_as, open = is_interactive())
 }
 \arguments{
 \item{save_as}{Path of file to create, relative to root of active project.

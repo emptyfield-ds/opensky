@@ -7,7 +7,7 @@ use_xaringan_kakashi <- function(save_as, open = is_interactive()) {
   check_installed(c("xaringan", "ragg", "tidyverse"))
   usethis::use_template(
     "xaringan_kakashi.Rmd",
-    save_as = save_as,
+    save_as = fs::path_ext_set(save_as, "Rmd"),
     open = open,
     package = "opensky"
   )
@@ -21,20 +21,21 @@ use_xaringan_kakashi <- function(save_as, open = is_interactive()) {
 
 #' @export
 #' @rdname use_xaringan_kakashi
-use_xaringan_tozan <- function(save_as) {
+use_xaringan_tozan <- function(save_as, open = is_interactive()) {
   check_installed(
     c("xaringan", "xaringanthemer", "xaringanExtra", "ragg", "tidyverse")
   )
 
   usethis::use_template(
     "xaringan_tozan.Rmd",
-    save_as = save_as,
+    save_as = fs::path_ext_set(save_as, "Rmd"),
     open = open,
     package = "opensky"
   )
 
   usethis::use_template(
     "tozan.css",
-    save_as = path(path_dir(save_as), "theme.css")
+    save_as = path(path_dir(save_as), "theme.css"),
+    package = "opensky"
   )
 }
