@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/emptyfield-ds/opensky/branch/main/graph/badge.svg)](https://app.codecov.io/gh/emptyfield-ds/opensky?branch=main)
 <!-- badges: end -->
 
-The goal of opensky is to ...
+opensky provides functions to include templates for xaringan slides, ggplot2 helpers, and R Markdown documents.
 
 ## Installation
 

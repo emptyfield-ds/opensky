@@ -10,7 +10,8 @@
 coverage](https://codecov.io/gh/emptyfield-ds/opensky/branch/main/graph/badge.svg)](https://app.codecov.io/gh/emptyfield-ds/opensky?branch=main)
 <!-- badges: end -->
 
-The goal of opensky is to …
+opensky provides functions to include templates for xaringan slides,
+ggplot2 helpers, and R Markdown documents.
 
 ## Installation
 
@@ -31,7 +32,7 @@ library(opensky)
 proj_dir <- fs::file_temp()
 fs::dir_create(proj_dir)
 usethis::proj_set(proj_dir, force = TRUE)
-#> ✓ Setting active project to '/private/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/RtmpKW9RXr/file9c615751da02'
+#> ✓ Setting active project to '/private/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/Rtmp0wwLEu/file9d9b59eed320'
 
 # create and open kakashi-themed xaringan slides
 use_xaringan_kakashi("slides")
