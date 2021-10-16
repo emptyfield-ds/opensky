@@ -2,12 +2,12 @@
 % Please edit documentation in R/xaringan.R
 \name{use_xaringan_kakashi}
 \alias{use_xaringan_kakashi}
-\alias{use_xaringan_elegant}
+\alias{use_xaringan_tozan}
 \title{Use xaringan templates}
 \usage{
 use_xaringan_kakashi(save_as, open = is_interactive())
 
-use_xaringan_elegant(save_as)
+use_xaringan_tozan(save_as)
 }
 \arguments{
 \item{save_as}{Path of file to create, relative to root of active project.
