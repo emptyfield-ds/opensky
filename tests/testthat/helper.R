@@ -1,3 +1,7 @@
+with_mock <- function(..., .parent = parent.frame()) {
+  mockr::with_mock(..., .parent = .parent, .env = "opensky")
+}
+
 local_temp_dir <- function(env = parent.frame()) {
   current_wd <- getwd()
   path <- fs::file_temp()

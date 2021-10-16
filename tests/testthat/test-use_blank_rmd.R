@@ -3,8 +3,13 @@ test_that("use_blank()", {
   local_temp_dir()
   local_proj_set()
 
-  use_blank_rmd("blank")
-  use_blank_rmd("blank2.Rmd")
+  with_mock(
+    check_installed = function(...) TRUE,
+    {
+      use_blank_rmd("blank")
+      use_blank_rmd("blank2.Rmd")
+    }
+  )
 
   expect_snapshot_file("blank.Rmd")
   expect_snapshot_file("blank2.Rmd")

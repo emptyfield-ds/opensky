@@ -3,7 +3,11 @@ test_that("use_xaringan_kakashi()", {
   local_temp_dir()
   local_proj_set()
 
-  use_xaringan_kakashi("kakashi", open = FALSE)
+  with_mock(
+    check_installed = function(...) TRUE,
+    use_xaringan_kakashi("kakashi", open = FALSE)
+  )
+
   expect_snapshot_file("kakashi.Rmd")
 })
 
@@ -12,6 +16,10 @@ test_that("use_xaringan_tozan()", {
   local_temp_dir()
   local_proj_set()
 
-  use_xaringan_tozan("tozan", open = FALSE)
+  with_mock(
+    check_installed = function(...) TRUE,
+    use_xaringan_tozan("tozan", open = FALSE)
+  )
+
   expect_snapshot_file("tozan.Rmd")
 })

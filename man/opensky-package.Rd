@@ -4,9 +4,9 @@
 \name{opensky-package}
 \alias{opensky}
 \alias{opensky-package}
-\title{opensky: What the Package Does (One Line, Title Case)}
+\title{opensky: Templates for 'ggplot2' and 'R Markdown'}
 \description{
-What the package does (one paragraph).
+Templates for 'ggplot2' and 'R Markdown'. 'opensky' provides functions to include templates for 'xaringan' slides, 'ggplot2' helpers, and 'R Markdown' documents.
 }
 \seealso{
 Useful links:
