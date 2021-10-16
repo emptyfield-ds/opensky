@@ -12,6 +12,7 @@ use_ggplot2_utils <- function(save_as = NULL, open = FALSE) {
   usethis::use_template(
     "ggplot2-utils.R",
     save_as = save_as,
-    open = open
+    open = open,
+    package = "opensky"
   )
 }

@@ -8,7 +8,8 @@ use_xaringan_kakashi <- function(save_as, open = is_interactive()) {
   usethis::use_template(
     "xaringan_kakashi.Rmd",
     save_as = save_as,
-    open = open
+    open = open,
+    package = "opensky"
   )
 
   usethis::use_github_file(
@@ -28,7 +29,8 @@ use_xaringan_tozan <- function(save_as) {
   usethis::use_template(
     "xaringan_tozan.Rmd",
     save_as = save_as,
-    open = open
+    open = open,
+    package = "opensky"
   )
 
   usethis::use_template(
