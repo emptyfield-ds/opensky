@@ -21,7 +21,7 @@ output:
 
 class: right middle hide-count
 background-color: white
-background-image: url(img/enso.jpg)
+background-image: url(img/INSERT_TITLE_SLIDE_IMAGE.png)
 background-position: left
 
 <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Karla|Montserrat|Open+Sans|Quattrocento|Raleway&display=swap" rel="stylesheet">
@@ -29,18 +29,20 @@ background-position: left
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(highlight = TRUE)
-local({
-  hook_old <- knitr::knit_hooks$get("document")  # save the old hook
-  knitr::knit_hooks$set(document = function(x, ...) {
-    x <- gsub("'''✓'''", "<span style='color:#a8cc8d'>✓</span>", x)
-    x <- gsub("'''●'''", "<span style='color:#e88388'>●</span>", x)
-    x <- gsub("('''')(.+?)('''')", "<span style='color:#a8cc8d'>\\2</span>", x)
-    x <- gsub("('''`)(.+?)(`''')", "<span style='color:#6C7B7F'>&#96;\\2&#96;</span>", x)
-    x <- gsub("(''')(.+?)(''')", "<span style='color:#6fbbed'>'\\2'</span>", x)
-    hook_old(x, ...)
-  })
-})
+
+knitr::opts_chunk$set(
+  highlight = TRUE,
+  warning = FALSE, 
+  message = FALSE, 
+  dev = "ragg_png",
+  dpi = 320,
+  out.width = "80%",
+  fig.width = 6,
+  fig.asp = 0.618,
+  fig.retina = 2,
+  fig.align = "center",
+  fig.show = "hold"
+)
 ```
 
 ```{r xaringan-themer, include=FALSE}
