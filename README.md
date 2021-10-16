@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/emptyfield-ds/opensky/workflows/R-CMD-check/badge.svg)](https://github.com/emptyfield-ds/opensky/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/emptyfield-ds/opensky/branch/main/graph/badge.svg)](https://app.codecov.io/gh/emptyfield-ds/opensky?branch=main)
 <!-- badges: end -->
 
 The goal of opensky is to …
