@@ -1,4 +1,4 @@
-test_that("use_r_hub()", {
+test_that("use_utils(), edit_utils()", {
   withr::local_options(usethis.quiet = TRUE)
   local_temp_dir()
   local_proj_set()
