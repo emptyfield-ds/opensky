@@ -24,11 +24,15 @@ opensky provides functions to include templates for xaringan slides, ggplot2 hel
 
 ## Installation
 
-You can install the development version of opensky from [GitHub](https://github.com/) with:
+You can install the latest version of opensky with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("emptyfield-ds/opensky")
+options(repos = c(
+  emptyfieldds = "https://emptyfield-ds.r-universe.dev",
+  CRAN = "https://cran.rstudio.com/"
+))
+
+install.packages("opensky")
 ```
 
 ## Example

@@ -15,12 +15,15 @@ ggplot2 helpers, and R Markdown documents.
 
 ## Installation
 
-You can install the development version of opensky from
-[GitHub](https://github.com/) with:
+You can install the latest version of opensky with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("emptyfield-ds/opensky")
+options(repos = c(
+  emptyfieldds = "https://emptyfield-ds.r-universe.dev",
+  CRAN = "https://cran.rstudio.com/"
+))
+
+install.packages("opensky")
 ```
 
 ## Example
@@ -32,7 +35,7 @@ library(opensky)
 proj_dir <- fs::file_temp()
 fs::dir_create(proj_dir)
 usethis::proj_set(proj_dir, force = TRUE)
-#> ✓ Setting active project to '/private/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/Rtmp0wwLEu/file9d9b59eed320'
+#> ✓ Setting active project to '/private/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/RtmplARs1s/fileae5743a21620'
 
 # create and open kakashi-themed xaringan slides
 use_xaringan_kakashi("slides")
