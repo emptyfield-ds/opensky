@@ -1,4 +1,5 @@
 test_that("use_utils(), edit_utils()", {
+  skip_on_os("Windows")
   withr::local_options(usethis.quiet = TRUE)
   local_temp_dir()
   local_proj_set()
