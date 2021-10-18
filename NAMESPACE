@@ -3,6 +3,7 @@
 export(use_blank_rmd)
 export(use_ggplot2_utils)
 export(use_r_hub)
+export(use_utils)
 export(use_xaringan_kakashi)
 export(use_xaringan_tozan)
 importFrom(fs,path)
