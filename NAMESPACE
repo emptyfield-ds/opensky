@@ -3,6 +3,7 @@
 export(edit_utils)
 export(use_blank_rmd)
 export(use_ggplot2_utils)
+export(use_purrr_compat)
 export(use_r_hub)
 export(use_testthat_setup)
 export(use_utils)
