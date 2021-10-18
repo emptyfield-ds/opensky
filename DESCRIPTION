@@ -13,15 +13,14 @@ BugReports: https://github.com/emptyfield-ds/opensky/issues
 Imports: 
     fs,
     rlang,
-    usethis (>= 2.0.1.9000)
+    usethis (>= 2.1.0)
 Suggests: 
     covr,
     mockr,
     testthat (>= 3.1.0),
     withr
 Remotes: 
-    malcolmbarrett/testthat@snapshot_file_path,
-    r-lib/usethis
+    malcolmbarrett/testthat@snapshot_file_path
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
