@@ -1,4 +1,5 @@
 test_that("use_purrr_compat()", {
+  skip_on_os("windows")
   skip_if_offline()
   withr::local_options(usethis.quiet = TRUE)
   local_temp_dir()
